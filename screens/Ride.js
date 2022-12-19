@@ -202,6 +202,7 @@ export default class RideScreen extends Component {
             <TextInput
               style={[styles.textinput, { width: "82%" }]}
               //Adicione o código para tornar TextInput editável para aceitar userID (Id do Usuário)
+              onChangeText={text => this.setState({ userId: text })}
               placeholder={"Id do Usuário"}
               placeholderTextColor={"#FFFFFF"}
               value={userId} />
