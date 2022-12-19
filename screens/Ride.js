@@ -73,7 +73,10 @@ export default class RideScreen extends Component {
 
           
           //Adicione uma caixa de alerta para exibir "Você alugou a bicicleta pela próxima 1 hora. Aproveite seu passeio!!"
-          
+           ToastAndroid.show(
+             "Você alugou a bicicleta pela próxima 1 hora. Aproveite seu passeio!!",
+             ToastAndroid.SHORT
+           );
 
           this.setState({
             bikeAssigned: true
